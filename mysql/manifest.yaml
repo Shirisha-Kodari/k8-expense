@@ -26,7 +26,7 @@ spec:
       containers:
       - name: mysql
         # image: joindevops/mysql:v1.0
-        image: shirisha104/mysql:v1.0
+        image: shirisha104/mysql:v1.
         readinessProbe:
           tcpSocket:
             port: 3306
