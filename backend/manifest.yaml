@@ -40,7 +40,7 @@ spec:
       containers:
       - name: backend
         # image: joindevops/backend:v1.0
-        image: shirisha104/backend:v1.0
+        image: shirisha104/backend:v1
         resources:
           requests:
             cpu: "100m"
