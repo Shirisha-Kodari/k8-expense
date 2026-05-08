@@ -120,7 +120,7 @@ spec:
       containers:
       - name: frontend
         # image: joindevops/frontend:v1.0
-        image: shirisha104/web:v1.0
+        image: shirisha104/web:v1
         resources:
           requests:
             cpu: "100m"
