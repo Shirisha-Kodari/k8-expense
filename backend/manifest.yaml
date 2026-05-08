@@ -6,7 +6,7 @@ metadata:
 data:
   DB_HOST: mysql # mysql component service name
   # DB_HOST: db-dev.daws78s.online
-  DB_HOST: kodari.online
+  # DB_HOST: kodari.online
 ---
 kind: Deployment
 apiVersion: apps/v1
@@ -36,7 +36,8 @@ spec:
       initContainers:
       - name: init-myservice
         image: busybox:1.28
-        command: ['sh', '-c', "until nslookup kodari.online; do echo waiting for myservice; sleep 2; done"]
+        # command: ['sh', '-c', "until nslookup kodari.online; do echo waiting for myservice; sleep 2; done"]
+        command: ['sh', '-c', "until nslookup mysql; do echo waiting for mysql; sleep 2; done"]
       containers:
       - name: backend
         # image: joindevops/backend:v1.0
